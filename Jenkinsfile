@@ -5,6 +5,8 @@ node {
     }
 
     stage('Building') {
+        sh 'pwd'
+        sh 'ls -l'
         sh 'gradle -q helloWorld'           
     }
 
