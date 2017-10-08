@@ -10,7 +10,7 @@ pipeline {
 
         stage('Building') {
             steps {
-                gradle -q helloWorld
+                sh 'gradle -q helloWorld'
             }            
         }
 
