@@ -6,9 +6,9 @@ node {
 
     stage('Building') {
         sh 'pwd'
-        sh 'git clone https://github.com/rrajen/gradle-hello-world.git .'
+        sh 'git clone https://github.com/rrajen/gradle-hello-world.git'
         sh 'ls -l'
-        sh 'gradle -q helloWorld'           
+        sh 'cd gradle-hello-world && gradle -q helloWorld'           
     }
 
     stage('Post_Processing') {
