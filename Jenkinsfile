@@ -1,21 +1,15 @@
 node {
 
     stage('Pre_Processing') {
-        steps {
-            echo "Pre-Processing step"
-        }            
+        echo "Pre-Processing step"
     }
 
     stage('Building') {
-        steps {
-            sh 'gradle -q helloWorld'
-        }            
+        sh 'gradle -q helloWorld'           
     }
 
     stage('Post_Processing') {
-        steps {
-            echo "Post-Processing step"
-        }            
+        echo "Post-Processing step"           
     }
 
 }
