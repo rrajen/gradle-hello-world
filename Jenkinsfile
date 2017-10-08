@@ -6,6 +6,7 @@ node {
 
     stage('Building') {
         sh 'pwd'
+        sh 'git clone https://github.com/rrajen/gradle-hello-world.git .'
         sh 'ls -l'
         sh 'gradle -q helloWorld'           
     }
